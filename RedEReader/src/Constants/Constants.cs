@@ -6,6 +6,6 @@ namespace RedEReader
 {
     public class Constants
     {
-        public string RedEUrl = "apidatos.ree.es";
+        public string RedEBaseUrl = "apidatos.ree.es";
     }
 }
