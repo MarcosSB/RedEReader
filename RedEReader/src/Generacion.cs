@@ -10,7 +10,7 @@ namespace RedEReader
     {
         public static string GetGeneracion()
         {
-            string url = RedEConstants.BaseUrl + "/" + RedEConstants.lang+ "/datos/generacion/estructura-generacion?start_date=2019-01-01T00:00&end_date=2019-01-31T22:00&time_trunc=day";
+            string url = RedEConstants.BaseUrl + "/" + RedEConstants.lang+ "/datos/generacion/estructura-generacion?start_date=2019-01-01T00:00&end_date=2019-12-31T22:00&time_trunc=month";
             var request = (HttpWebRequest)WebRequest.Create(url);
             request.Method = "GET";
             request.ContentType = "application/json";
