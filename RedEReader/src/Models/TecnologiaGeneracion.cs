@@ -59,5 +59,10 @@ namespace RedEReader.src.Models
         public List<Included> included { get; set; }
     }
 
+    public class granularity
+    {
+        enum granularities { hour, day, month, year };
+    }
+
 
 }

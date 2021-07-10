@@ -10,7 +10,11 @@ namespace RedEConstants
     {
         static void Main(string[] args)
         {
-            var generacion = Generacion.GetGeneracion();
+            DateTime from = DateTime.ParseExact("2021-06-01", "yyyy-MM-dd",null);
+            DateTime today = DateTime.UtcNow;
+
+
+            var generacion = Generacion.GetGeneracion(from, today, "day");
             Console.WriteLine(generacion);
             var desc = JsonSerializer.Deserialize<Root>(generacion);
             
